@@ -1,13 +1,13 @@
-# Task Management System
+# Task Management API
 
-This Task Management System is a web application developed using React.js for the frontend, Node.js with Express.js for the backend, and MongoDB for the database. The project incorporates user authentication with three roles: customer, employee, and general user.
+This Task Management API is a web API developed using Node.js with Express.js for the backend, and MongoDB for the database. The project incorporates user authentication with three roles: customer, employee, and general user.
 
 ## 🎯 Getting Started
 
 1. __Clone the Repository:__
 
        https://github.com/kameera135/Task_Management_API.git
-       
+
 2. __Install Dependencies:__
         
        cd task-management-API
