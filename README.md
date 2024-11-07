@@ -6,11 +6,12 @@ This Task Management System is a web application developed using React.js for th
 
 1. __Clone the Repository:__
 
-       https://github.com/Vijayarajvijay/Task-Manager-FE
+       https://github.com/kameera135/Task_Management_API.git
+       
 2. __Install Dependencies:__
         
-                cd task-management
-                  npm install
+       cd task-management-API
+       npm install
 
 3. __Configure Environment Variables:__
 
@@ -21,28 +22,13 @@ This Task Management System is a web application developed using React.js for th
        JWT_SECRET=your_jwt_secret_key
 4. __Run the Application:__
            
-                         npm start
+       npm start
 
 5. __Access the Application:__
 
 * Open your browser and navigate to http://localhost:3000.
 
 
-
-6. __Backend Postman URl :__  
-
-       https://documenter.getpostman.com/view/30449043/2s9YyqjNTJ
-
- 7. __Frontend Source code :__
-
-        https://github.com/Vijayarajvijay/Task-Manager-FE
-
-8. __Netlify Deployed Url For Live:__
-
-       https://profound-squirrel-03efdb.netlify.app/
-9 . __Backend  Deployed Url :__
-
-      https://taskmanager-clbj.onrender.com
 ## 🗝️ Sample User Logins :
 
 1. __Employee Login:__
