@@ -11,6 +11,8 @@ const create = async (req, res) => {
           name: req.body.name,
           email: req.body.email,
           password: hashedPassword,
+          mobile: req.body.mobile, 
+          desc: req.body.desc, 
         });
   
         res.status(201).send({
@@ -155,8 +157,7 @@ const updateUserData =async(req,res)=>{
     try {
         const {id} = req.params;
         // const hashedPassword = await Auth.hashPassword(password);
-                       
-        req.body.password = await auth.hashPassword(req.body.password)
+        
         const updateduser = await userModel.findByIdAndUpdate(id,req.body,{
             new:true
         });
