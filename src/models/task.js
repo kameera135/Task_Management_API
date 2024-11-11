@@ -7,10 +7,9 @@ const taskSchema = new mongoose.Schema({
     assignedTo: {  type: mongoose.Schema.Types.ObjectId },
     work :{type:String , },
     productUrl:{type:String, },
-    status: { type: String, default: 'Pending' },
+    status: { type: String, default: 'backlog' },
     createdAt: { type: Date, default: Date.now() },
-
-
+    dueDate: {type: Date}
 })
 
 const taskModel = mongoose.model("Tasks",taskSchema)

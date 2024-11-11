@@ -4,7 +4,7 @@ import mongoose from "../models/index.js";
 
 const createTask = async (req, res) => {
   try {
-    const { title, description, assignedTo } = req.body;
+    const { title, description, assignedTo, dueDate } = req.body;
 
     // Check if the assigned user exists
     const existingUser = await userModel.findOne({ email: assignedTo });
@@ -21,6 +21,7 @@ const createTask = async (req, res) => {
       description,
       createdBy: req.headers.userId,
       assignedTo: existingUser._id,
+      dueDate: req.body.dueDate
     });
 
     res.status(201).json({ message: 'Task created successfully', task });
