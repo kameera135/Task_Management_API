@@ -9,7 +9,8 @@ const taskSchema = new mongoose.Schema({
     productUrl:{type:String, },
     status: { type: String, default: 'backlog' },
     createdAt: { type: Date, default: Date.now() },
-    dueDate: {type: Date}
+    dueDate: {type: Date},
+    notified: { type: Boolean, default: false },
 })
 
 const taskModel = mongoose.model("Tasks",taskSchema)

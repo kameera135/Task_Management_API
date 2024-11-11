@@ -11,8 +11,6 @@ dotenv.config()
 
 const mongoUri = `${process.env.dbUrl}/${process.env.dbName}`;
 
-console.log("URL",mongoUri);
-
 mongoose.connect(mongoUri)
 .then(() => console.log('mongoos connected'))
 .catch((err) => console.log("mongoos connection error: ", err))
