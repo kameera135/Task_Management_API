@@ -3,15 +3,13 @@ import dotenv from 'dotenv'
 import cors from 'cors'
 
 import AppRoutes from './src/routes/index.js'
+import './src/controllers/schedular.js'
 
 dotenv.config()
 
 const PORT = process.env.PORT
 
-
 const app = express()
-
-
 
 app.use(cors())
 app.use(express.json())

@@ -7,7 +7,7 @@ const createTask = async (req, res) => {
     const { title, description, assignedTo, dueDate } = req.body;
 
     // Check if the assigned user exists
-    const existingUser = await userModel.findOne({ email: assignedTo });
+    const existingUser = await userModel.findById(assignedTo);
 
     if (!existingUser) {
       return res.status(400).json({
