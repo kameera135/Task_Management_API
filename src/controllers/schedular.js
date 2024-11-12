@@ -1,7 +1,7 @@
 import cron from 'node-cron';
 import { sendNotificationEmail } from '../services/emailService.js';
 
-import task from '../models/task.js';
+import tasks from '../models/task.js';
 import user from '../models/user.js';
 
 cron.schedule('0 * * * *', async () => {
